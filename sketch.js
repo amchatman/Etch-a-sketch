@@ -5,3 +5,9 @@
     up to 64 x 64.
   --Change the color from black and white to a random RGB color
 */
+const  canvasGrid = document.querySelector('#canvas-grid');
+//Creates a div
+const grid = document.createElement('div');
+//Add class name grid
+grid.classList.add('grid');
+canvasGrid.appendChild(grid);
