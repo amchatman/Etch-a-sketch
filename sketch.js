@@ -5,9 +5,17 @@
     up to 64 x 64.
   --Change the color from black and white to a random RGB color
 */
-const  canvasGrid = document.querySelector('#canvas-grid');
-//Creates a div
-const grid = document.createElement('div');
-//Add class name grid
-grid.classList.add('grid');
-canvasGrid.appendChild(grid);
+const canvasBoard = document.querySelector('#canvasBoard');
+
+//Creates 16 columns
+canvasBoard.style.gridTemplateColumns = "repeat(16, 1fr)";
+//Creates 16 Rows
+canvasBoard.style.gridTemplateRows = "repeat(16, 1fr)";
+
+//16 x 16 = 256 
+for(i = 0; i < 256; i++){
+  const gridCanvas = document.createElement('div');
+  gridCanvas.style.backgroundColor = "green";
+  canvasBoard.insertAdjacentElement('beforeend',gridCanvas);
+ 
+}

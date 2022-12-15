@@ -1,1 +1,6 @@
 /*Set up hover that highlight the grid on hover*/
+.canvas-board{
+    width:500px;
+    height:500px;
+    display:grid;
+}
