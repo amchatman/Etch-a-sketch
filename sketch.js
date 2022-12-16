@@ -17,5 +17,3 @@ function populateCanvas(size){
   }
 }
 populateCanvas(16);
-
-const rangeSlider = document.querySelector('#range-slider');
