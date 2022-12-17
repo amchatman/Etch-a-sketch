@@ -38,11 +38,21 @@ function changeCanvas(input){
 }
 //Set the color of the mouseover 
 function colorCanvas(){
-  this.style.backgroundColor = color;
+  //sets the color to rainbow randomly
+  if(color === "rainbow"){
+    this.style.backgroundColor = `hsl(${Math.random() * 360},100%,50%)`;
+  }else{
+    //sets the color
+    this.style.backgroundColor = color;
+  }
 }
-
 //Change color
 function changeColor(choice){
   color = choice;
-
+}
+//Clears the canvas board
+function clearCanvas(){
+  const canvasBoard = document.querySelector('#canvasBoard');
+  const gridCanvas = canvasBoard.querySelectorAll('div');
+  gridCanvas.forEach((div) => div.style.backgroundColor = 'white');
 }
