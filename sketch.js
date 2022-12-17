@@ -1,4 +1,6 @@
+//Global variables
 let color = "black";
+let click = true;
 
 function populateCanvas(size){
   const canvasBoard = document.querySelector('#canvasBoard');
@@ -31,19 +33,22 @@ function changeCanvas(input){
 
   //Input must greater then 2 less then 100
    if(input >= 2 && input <= 100){
+    document.querySelector(".error").style.display = "none";
     populateCanvas(input);
    }else{
-    console.log('Too many squares')
+    document.querySelector(".error").style.display = "flex";
    }
 }
 //Set the color of the mouseover 
 function colorCanvas(){
-  //sets the color to rainbow randomly
-  if(color === "rainbow"){
-    this.style.backgroundColor = `hsl(${Math.random() * 360},100%,50%)`;
-  }else{
-    //sets the color
-    this.style.backgroundColor = color;
+  if(click){
+     //sets the color to rainbow randomly
+     if(color === "rainbow"){
+      this.style.backgroundColor = `hsl(${Math.random() * 360},100%,50%)`;
+    }else{
+      //sets the color
+      this.style.backgroundColor = color;
+    }
   }
 }
 //Change color
@@ -56,3 +61,7 @@ function clearCanvas(){
   const gridCanvas = canvasBoard.querySelectorAll('div');
   gridCanvas.forEach((div) => div.style.backgroundColor = 'white');
 }
+
+document.querySelector('body').addEventListener('click',() =>{
+  click = !click;
+});
