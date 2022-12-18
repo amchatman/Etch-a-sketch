@@ -12,18 +12,18 @@
         <div class="title">Etch A Scketch</div>
         <div class="canvas-board" id="canvasBoard"></div>
         <div class="buttons">
-            <button onclick="changeColor('black')">Black</button>
-            <button onclick="changeColor('gray')">Gray</button>
-            <button onclick="changeColor('rainbow')">Rainbow</button>
-            <button onclick="changeColor('white')">Erase</button>
-            <button onclick="clearCanvas()">Clear</button>
+            <button class="canvas-button" onclick="changeColor('black')">Black</button>
+            <button class="canvas-button" onclick="changeColor('gray')">Gray</button>
+            <button class="canvas-button" onclick="changeColor('rainbow')">Rainbow</button>
+            <button class="canvas-button" onclick="changeColor('white')">Erase</button>
+            <button class="canvas-button" onclick="clearCanvas()">Clear</button>
         </div>
         <div class="input-container">
             <input type="text" placeholder="Canvas size" value="16" 
             onchange="changeCanvas(this.value)"/>
-            <button>Change Size</button>
-            <div class="error">Enter a size between 1 throught 100</div>
+            <button class="change-size-button">Change Size</button>
         </div>
+        <div class="error">Enter a size between 1 throught 100</div>
     </div>
     <script src="sketch.js"></script>
 </body>

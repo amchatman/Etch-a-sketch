@@ -1,6 +1,72 @@
 /*Set up hover that highlight the grid on hover*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    --darkgray:#262323;
+    --black:#000000;
+    --red:#D93636;
+    --white:#FFFFFF;
+}
+body{
+    background-color:var(--darkgray);
+    color:var(--white);
+}
+.container{
+    width: 600px;
+    margin: 60px auto;
+    border: 15px solid var(--black);
+    background-color:var(--red);
+    border-radius: 5px;
+  }
 .canvas-board{
     width:500px;
     height:500px;
     display:grid;
+    margin: 0 auto;
+    border: 6px solid var(--black);
 }
+.title,.buttons{
+    background-color:var(--black);
+    margin: 20px auto;
+    width:500px;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+}
+.buttons{
+    display:flex;
+    justify-content:center;
+    padding:10px 20px;
+}
+.canvas-button{
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: var(--black);
+    color:var(--white);
+    border: none;
+    font-size: 18px;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+}
+input{
+    border:2px solid var(--red);
+    padding:5px;
+}
+.change-size-button{
+    background-color:var(--black);
+    color: white;
+    border: 2px solid var(--red);
+    padding: 5px;
+}
+.error{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
