@@ -18,6 +18,8 @@ function populateCanvas(size){
 
     //Create a div 
     const gridCanvas = document.createElement('div');
+    //Give the div the class of grid
+    gridCanvas.classList.add('grid');
 
     //Create add listener on mouseover call colorCanvas function
     gridCanvas.addEventListener("mouseover",colorCanvas);
