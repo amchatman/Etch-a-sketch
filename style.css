@@ -1,4 +1,5 @@
 /*Set up hover that highlight the grid on hover*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin:0;
     padding:0;
@@ -11,10 +12,11 @@
 body{
     background-color:var(--darkgray);
     color:var(--white);
+    font-family: 'Roboto', sans-serif;
 }
 .container{
     width: 600px;
-    margin: 60px auto;
+    margin: 20px auto;
     border: 15px solid var(--black);
     background-color:var(--red);
     border-radius: 5px;
@@ -28,13 +30,14 @@ body{
 }
 .title,.buttons{
     background-color:var(--black);
-    margin: 20px auto;
+    margin: 15px auto;
     width:500px;
+    padding: 10px 20px;
 }
 .title{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    padding: 20px;
+    text-transform: uppercase;
 }
 .buttons{
     display:flex;
@@ -49,6 +52,7 @@ body{
     color:var(--white);
     border: none;
     font-size: 18px;
+    text-transform:uppercase;
 }
 .input-container{
     display: flex;
@@ -60,7 +64,7 @@ input{
 }
 .change-size-button{
     background-color:var(--black);
-    color: white;
+    color: var(--white);
     border: 2px solid var(--red);
     padding: 5px;
 }
