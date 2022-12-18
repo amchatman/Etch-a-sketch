@@ -61,6 +61,7 @@ body{
 input{
     border:2px solid var(--red);
     padding:5px;
+    margin-bottom:15px;
 }
 .change-size-button{
     background-color:var(--black);
@@ -69,7 +70,7 @@ input{
     padding: 5px;
 }
 .error{
-    display: flex;
+    display:none;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
