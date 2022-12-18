@@ -57,11 +57,11 @@ body{
 .input-container{
     display: flex;
     justify-content: center;
+    margin-bottom:15px;
 }
 input{
     border:2px solid var(--red);
     padding:5px;
-    margin-bottom:15px;
 }
 .change-size-button{
     background-color:var(--black);
